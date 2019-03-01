@@ -3,6 +3,8 @@ body {
     padding: 0;
 }
 
+/*********** Hero banner **********/
+
 .hero {
     position: absolute;
     z-index: 1;
@@ -14,17 +16,18 @@ body {
     background: url("../img/hero.jpg") 50% 100% no-repeat;
 }
 
+/*********** Main navigation**************/
+
 nav {
     position: relative;
     margin: 0 auto;
     width: 980px;
     z-index: 2;
     top: 20px;
-    text-shadow: 1px 1px#333333;
     text-align: center;
     display: table;
 
-    border-radius: 3px;
+    border-radius: 4px;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))),
                 -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, 
                 -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
@@ -32,10 +35,28 @@ nav {
 
 nav a {
     display: table-cell;
-    padding: 10px;
+    vertical-align: middle;
+    padding: 6px;
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 0 0 2px #333333;
+    text-shadow: 0 0 3px #333333;
     text-decoration: none;
     color: #ffffff;
 }
+
+nav form {
+    display: table-cell;
+    width: 120px;
+    padding: 6px;
+}
+
+nav form input {
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))),
+                -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, 
+                -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+
+}
+
