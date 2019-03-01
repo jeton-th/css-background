@@ -17,8 +17,6 @@ body {
     bottom: 125px;
     overflow: hidden;
     background: url("../img/hero.jpg") 50% 100% no-repeat;
-    display: table-cell;
-    
 }
 
 .hero h1, .hero h2, .hero a {
@@ -34,9 +32,9 @@ body {
 
 .hero a {
     color: white;
-    text-decoration: none;
     margin-top: 1em;
     font-size: 24px;
+    text-decoration: none;
 }
 
 .hero a:hover {
@@ -59,6 +57,7 @@ nav {
     text-align: center;
     display: table;
     border-radius: 4px;
+    box-shadow: 0 0 1px 1px #888888;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))),
                 -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, 
                 -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
@@ -73,27 +72,41 @@ nav a {
     text-shadow: 0 0 3px #333333;
     text-decoration: none;
     color: #ffffff;
+    border-left: 1px solid #888888;
+    border-right: 1px solid #555555;
 }
 
 nav form {
     display: table-cell;
     width: 120px;
     padding: 6px;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))),
-    -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, 
-    -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
 }
 
 nav form input {
-    width: 90%;
+    display: block;
+    width: 100px;
+    padding: 3px 25px;
     border: none;
-    border-radius: 8px;
-    background-color: transparent;
-    background-image: url("../img/search.png");
+    outline: none;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))),
+                -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFW…px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, 
+                -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+    background-image: url("../img/search-w.png");
     background-repeat: no-repeat;
     background-size: 14px 15px;
-    background-position: 4px 2px;
+    background-position: 5% 50%;
     box-shadow: 0 -1px 1px #aaaaaa inset,
-    0 2px 1px #000000 inset;
+                0 2px 1px #000000 inset;
 }
 
+nav form input:focus {
+    width: 150px;
+    background-color: #ffffff;
+    background-image: url("../img/search-b.png");
+    background-position: 5% 50%;
+    background-size: 14px 15px;
+    transition: all 0.5s;
+}
