@@ -1,11 +1,14 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 /*********** Hero banner **********/
 
 .hero {
+    text-align: center;
+    color: white;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -14,6 +17,35 @@ body {
     bottom: 125px;
     overflow: hidden;
     background: url("../img/hero.jpg") 50% 100% no-repeat;
+    display: table-cell;
+    
+}
+
+.hero h1, .hero h2, .hero a {
+    font-weight: 300;
+}
+
+.hero h1 {
+    font-size: 70px;
+    letter-spacing: -2px;
+    margin-top: 1em;
+    margin-bottom: 10px;
+}
+
+.hero a {
+    color: white;
+    text-decoration: none;
+    margin-top: 1em;
+    font-size: 24px;
+}
+
+.hero a:hover {
+    border-bottom: 1px solid white;
+}
+
+.text-area {
+    position: relative;
+    top: 10%;
 }
 
 /*********** Main navigation**************/
