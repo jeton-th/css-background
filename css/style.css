@@ -8,15 +8,17 @@ body {
 
 .hero {
     text-align: center;
-    color: white;
     position: absolute;
+    height: 540px;
     z-index: 1;
     top: 0;
     left: 0;
     right: 0;
     bottom: 125px;
+    color: white;
     overflow: hidden;
     background: url("../img/hero.jpg") 50% 100% no-repeat;
+    background-size: 1440px 1315px;
 }
 
 .hero h1, .hero h2, .hero a {
@@ -51,7 +53,6 @@ body {
 nav {
     position: relative;
     margin: 0 auto;
-    width: 980px;
     z-index: 2;
     top: 20px;
     text-align: center;
@@ -66,7 +67,7 @@ nav {
 nav a {
     display: table-cell;
     vertical-align: middle;
-    padding: 6px;
+    width: 100px;
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 0 0 3px #333333;
@@ -74,6 +75,10 @@ nav a {
     color: #ffffff;
     border-left: 1px solid #888888;
     border-right: 1px solid #555555;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 nav form {
@@ -85,6 +90,7 @@ nav form {
 nav form input {
     display: block;
     width: 100px;
+    margin: 0 auto;
     padding: 3px 25px;
     border: none;
     outline: none;
@@ -109,4 +115,62 @@ nav form input:focus {
     background-position: 5% 50%;
     background-size: 14px 15px;
     transition: all 0.5s;
+}
+
+/*********** Grid section **********/
+
+.promo {
+    position: absolute;
+    width: 100%;
+    top: 542px;
+}
+
+.grid {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.grid img {
+    width: 25%;
+    float: left;
+}
+
+/***********  Footer **********/
+
+footer {
+    width: 100%;
+    position: absolute;
+    top: 742px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 11px;
+}
+
+footer a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+footer img {
+    position: relative;
+    top: 3px;
+}
+
+.links {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
 }
